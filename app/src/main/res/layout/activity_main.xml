@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/purple">
+
+
+    <Button
+        android:id="@+id/buttonCalculate"
+        android:layout_width="131dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextExponent"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="107dp"
+        android:layout_marginEnd="138dp"
+        android:layout_marginRight="138dp"
+        android:text="Calculate" />
+
+    <EditText
+        android:id="@+id/editTextExponent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextBase"
+        android:layout_margin="16dp"
+        android:hint="Enter Exponent Number"
+        android:inputType="numberDecimal"
+        android:textColor="@color/black"
+        android:textColorHighlight="#232020" />
+
+    <EditText
+        android:id="@+id/editTextBase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:hint="Enter Base Number"
+        android:inputType="numberDecimal"
+        android:textColor="@color/black"
+        android:textColorHighlight="#1E1C1C" />
+
+    <TextView
+        android:id="@+id/textViewResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonCalculate"
+        android:layout_marginTop="16dp"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
